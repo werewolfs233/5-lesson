@@ -1,0 +1,388 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*reset*/
+
+.logo{
+    display: flex;
+    background-color: #DCDCDC;
+    justify-content: space-around;
+    height: 10vh;
+}
+
+.logo div{
+    background-color: #5F9EA0;
+    flex-basis: 45%;
+
+}
+
+.logo div p{
+    font-size: 70px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 3%
+}
+
+.punkt{
+    display: flex;
+    background-color: #F5F5DC;
+    height: 9vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.punkt p{
+    display: block;
+    background-color:#5F9EA0;
+    padding: 4px;
+    font-size: 40px
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    background-color: #DCDCDC;
+}
+
+.content .blok{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    max-height: 40vh;
+    justify-content: space-around;
+
+}
+
+.blok p{
+    display: block;
+    background-color: #5F9EA0;
+    font-size: 50px;
+    font-weight: 700;
+    height: 8%;
+    text-align:
+}
+
+.content .img{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-flow:wrap;
+    justify-content: space-around;
+}
+
+.content .img .x{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .img .xx  {
+    height: 90%;
+    flex-basis: 65%;
+    border: 1px solid ;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.content .img .x p{
+   align-self: flex-end;
+    font-size: 30px;
+}
+
+.img1,
+.img2{
+  background-image: url(img/s1200.jpeg)
+}
+
+.img3,
+.img5{
+    background-image: url(img/2%20img.webp)
+}
+
+
+.img4,
+.img6{
+    background-image: url(img/3%20%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0.jpg)
+}
+
+
+footer div{
+    background-color: #5F9EA0;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+footer div p{
+    font-size: 70px;
+    font-weight: 800
+}
+
+@media (min-width:1600px) and (max-width:2200px) {
+
+    .content .img .xx  {
+    height: 70%;
+    flex-basis: 85%;
+    }
+}
+
+@media (min-width:1440px) and (max-width:1600px) {
+
+    .content .img .xx  {
+    height: 60%;
+    flex-basis: 95%;
+    }
+}
+
+
+@media (min-width:1024px) and (max-width:1440px){
+
+    .content .img .x{
+    flex-basis: 40%;
+
+}
+
+    .content .img .xx  {
+        height: 70%;
+        flex-basis: 70%;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:1024px){
+
+    .logo{
+        height: 8vh;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .logo div{
+        height: 100%;
+    }
+
+    .logo div p{
+        font-size: 50px;
+    }
+
+    .punkt{
+        height: 7vh;
+    }
+
+    .punkt p{
+        font-size: 30px;
+    }
+
+    .content{
+        height: 150vh;
+    }
+
+    .blok p{
+        font-size: 35px;
+        height: 6%;
+    }
+
+    .conteiner .img{
+        height: 120vh;
+    }
+
+    .content .img .x{
+    flex-basis: 100%;
+    margin-top: 2vh
+    }
+
+    .content .img .xx  {
+        height: 100%;
+        flex-basis: 50%;
+    }
+
+    footer div p{
+        font-size: 50px;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px){
+
+    .logo{
+        height: 3vh;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .logo div{
+        height: 100%;
+    }
+
+    .logo div p{
+        font-size: 30px;
+    }
+
+    .punkt{
+        height: 5vh;
+    }
+
+    .punkt p{
+        font-size: 20px;
+    }
+
+    .content{
+        height: 160vh;
+    }
+
+    .content .blok{
+        width: 30%
+    }
+
+    .blok p{
+        font-size: 30px;
+        height: 1.5vh;
+        padding-top: 0.2vh;
+        padding-bottom: 0.5vh;
+    }
+
+    .conteiner .img{
+        height: 140vh;
+    }
+
+    .content .img .x{
+    flex-basis: 100%;
+
+    }
+
+    .content .img .xx  {
+        height: 90%;
+        flex-basis: 90%;
+    }
+
+    footer div{
+        height: 5vh
+    }
+
+    footer div p{
+        font-size: 40px;
+    }
+}
+
+@media (min-width:320px) and (max-width:425px){
+
+    .logo{
+        height: 7vh;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo div{
+        flex-basis: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .logo div p{
+        font-size: 40px;
+    }
+
+    .punkt{
+        height: 7vh;
+        flex-wrap: wrap;
+
+    }
+
+    .punkt p{
+        font-size: 23px;
+    }
+
+    .content{
+        height: 90vh;
+    }
+
+    .content .blok{
+        width: 40%
+    }
+
+    .blok p{
+        font-size: 30px;
+        height: 1.5vh;
+        padding-top: 0.2vh;
+        padding-bottom: 0.5vh;
+    }
+
+    .conteiner .img{
+        height: 50%;
+    }
+
+    .content .img .x{
+        flex-basis: 70%;
+
+
+    }
+
+    .content .img .xx  {
+        height: 70%;
+        flex-basis: 90%;
+    }
+
+    .content .img .x p{
+       font-size: 20px;
+    }
+
+    footer div{
+        height: 5vh
+    }
+
+    footer div p{
+        font-size: 40px;
+    }
+
+}
