@@ -282,16 +282,19 @@ h4{
 
 }
 
-.boxflex .img1:focus{
-    transform: scale(1.2)
-}
+
 
 .boxflex .img1:hover{
     background-image: url(imgCSS/Hober1111111.png);
     transform: scale(1);
 }
 
+.boxflex .img1:active{
+    background-image: url(imgCSS/portfolio1.png);
+    transform: scale(2.5);
 
+    margin: 150px 0px 1500px 400px;
+}
 
 .boxflex .img2{
     height: 260px;

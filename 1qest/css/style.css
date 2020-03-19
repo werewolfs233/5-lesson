@@ -1,18 +1,22 @@
 .wrapper{
     display: flex;
-    height: 170px;
+    height: 60vh;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .wrapper .box1,
 .box2,
 .box3{
     flex-basis: 200px;
+    height: 20vh
 }
 
 .box2,
 .box3{
     background-color: #FFCC00;
+
 }
 
 .box1{
@@ -23,18 +27,11 @@
     flex-grow: 0.25;
 }
 
-.wrap{
-    display: flex;
-    justify-content: space-around;
-
-}
-
-
 .box9{
     background-color: #33CC33;
-    height: 170px;
+    height: 200px;
     flex-basis: 100%;
-    margin-top: 30px;
+    margin-top: -130px;
 }
 
 
