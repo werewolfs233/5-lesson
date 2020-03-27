@@ -1,3 +1,6 @@
+
+
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -259,98 +262,72 @@ h4{
     padding-top: 3.5vh;
 }
 
-.boxflex{
+.conteiner5{
+    text-align: center;
+}
 
-    height: 63vh;
-    max-width: 90%;
+.galery{
+
+}
+
+.pic{
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+}
+
+.pic .pic-image, .pic-caption, .pic:hover .pic-caption, .pic:hover img {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease
+}
+
+.pic:hover .bottom-to-top{
+    opacity: 1;
+}
+
+.pic:hover .bottom-to-top {
+    top: 0;
+    left: 0
+}
+
+
+
+.pic-caption{
+    position: absolute;
+    text-align: center;
+    cursor: default;
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: space-evenly;
-    margin-left: 5%;
-
-
-}
-
-.boxflex .hover_color{
-    height: 26vh;
-    flex-basis: 16.7vw;
-    background-color: #0096E4;
-    opacity: 0.8;
-}
-
-
-.boxflex .hover_color .img{
-    height: 100%;
-    opacity: 1.2 ;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.boxflex .hover_color .img:hover{
-    opacity: 0.15;
-}
-
-.boxflex .hover_color .img1{
-    background-image: url(imgCSS/portfolio1.png);
-}
-
-.boxflex .hover_color .img2{
-    background-image: url(imgCSS/portfolio2.png);
-}
-
-.boxflex .hover_color .img3{
-    background-image: url(imgCSS/portfolio3.png);
-}
-
-.boxflex .hover_color .img4{
-    background-image: url(imgCSS/portfolio4.png);
-}
-
-.boxflex .hover_color .img5{
-    background-image: url(imgCSS/portfolio5.png);
-}
-
-.boxflex .hover_color .img6{
-    background-image: url(imgCSS/portfolio6.png);
-}
-
-.wrapper_icon{
-    display: flex;
-    padding: 102px;
+    height: 92%;
+    padding: 10px;
     opacity: 0;
+    background-color: rgba(0,150,228,0.5)
+
 }
 
-.wrapper_icon:hover{
-    opacity: 2;
-}
-
-
-.wrapper_icon .icon{
-    color: white;
-    border: 1px solid white;
+.pic-caption .fa-search-plus{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    border: 1px solid #FFFFFF;
     border-radius: 3px;
-    background-color:#0096E4;
+    color: #FFFFFF;
     padding: 10px;
-    opacity: 1;
-    margin: 5px;
 }
 
-.wrapper_icon .icon2{
-
-    color: white;
-    border: 1px solid white;
+.pic-caption .fa-link{
+    position: absolute;
+    top: 50%;
+    right: 44%;
+    border: 1px solid #FFFFFF;
     border-radius: 3px;
-    background-color:#0096E4;
+    color: #FFFFFF;
     padding: 10px;
-    opacity: 1;
-    margin: 5px;
 }
+
 
 
 /*dfdfdfdfdfd*/
@@ -682,6 +659,57 @@ input:disabled + label:before {
     flex-basis: 16.7vw;
     }
 }
+
+@media (min-width:425px) and (max-width:768px){
+
+    .wrapper_portfolio{
+    height: 100%;
+    }
+}
+
+@media (min-width:375px) and (max-width:425px){
+
+    .wrapper_portfolio{
+    height: 100%;
+    }
+
+    .pic{
+        width: 100%
+    }
+
+    .pic-caption .fa-search-plus{
+    top: 50%;
+    left: 35%;
+}
+
+.pic-caption .fa-link{
+    top: 50%;
+    right: 40%;
+}
+}
+
+
+@media (min-width:320px) and (max-width:375px){
+
+    .wrapper_portfolio{
+    height: 100%;
+    }
+
+    .pic{
+        width: 100%
+    }
+
+     .pic-caption .fa-search-plus{
+    top: 50%;
+    left: 33%;
+}
+
+.pic-caption .fa-link{
+    top: 50%;
+    right: 37%;
+}
+}
+
 
 @media (min-width:320px) and (max-width:960px) {
 
